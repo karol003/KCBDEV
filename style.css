@@ -1,0 +1,356 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.bori {
+    background: linear-gradient(109.6deg, rgb(251, 186, 186) 11.2%, rgb(200, 122, 245) 91.2%);
+    height: 100%;
+    
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface .flex {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.interface .kcb-contato a button {
+    padding: 10px; 
+    font-size: 25px;
+    color: white;
+    background-color: rgb(226, 43, 128);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: right 20%;
+    
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+   display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav.menu-pc a:hover {
+    color: rgb(82, 13, 71);
+    transform: scale(1.05);
+    display: inline-block;
+    transition: 1s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-pc ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.kcb-contato button:hover {
+    box-shadow: 0px 0px 8px purple;
+}
+
+
+
+
+/* Topo do site */
+section.topo-do-site {
+    padding: 20px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: rgb(82, 13, 71);
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.interface .menu-pc {
+    margin-top: 5%;
+    margin-right: 0%;
+    font-size: 25px;
+}
+
+
+.kcb-mais button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(226, 43, 128);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.kcb-mais button:hover {
+    box-shadow: 0px 0px 8px purple;
+    color: white;
+}
+
+.kcb-mais button {
+    color: white;
+}
+
+.img-topo-site img {
+    max-width: 60%;
+    max-height: 60%;
+    margin-right: 0.01%; /* Corrected syntax */
+    width: auto;
+    height: auto;
+    border-radius: 60%;
+    -webkit-box-shadow: 5px 5px 37px 17px pink;
+    box-shadow: 5px 5px 37px 17px pink;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Especialidades */
+h2 {
+    text-shadow: 0.1em 0.1em 0.2em rgb(226, 43, 128);
+    margin-bottom: 20px;
+}
+
+section.especialidades {
+    margin-top: 250px;
+    padding: 100px;
+}
+
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 5%;
+    border-radius: 20px;
+    border: 2px solid rgba(226, 43, 128, 0.068);
+    margin-top: 80px;
+    transition: 1s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(226, 43, 128);
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: palevioletred;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    font-weight: 600; /* Corrected value */
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+/* Sobre */
+section.Sobre {
+    padding: 230px 4%;
+}
+
+section.Sobre .flex {
+    align-items: center;
+    gap: 200px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+section.Sobre img {
+    width: 190%;
+    border-radius: 30%;
+}
+
+.Sobre .txt-sobre {
+    color: white;
+    text-align: justify;
+}
+
+.Sobre .txt-sobre .redes button {
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(226, 43, 128, 0.548);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.redes button:hover {
+    box-shadow: 0 0 8px pink;
+    transform: scale(1.05);
+}
+/* Estilo do mobile */
+
+.Projetos {
+    text-align: center;
+}
+.txt-contato p {
+    color: white;
+}
+.Contato-e-portifólio .contatu .redes button{
+    margin-top: 2%;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    border: none;
+    background-color: rgba(226, 43, 128, 0.548);
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+
+.Contato-e-portifólio h2{
+    margin-top: 20%;
+}
+footer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+ 
+
+section .Contato-e-portifólio .contatu .txt-contato p{
+    color: white;
+}
+
+footer.Contato-e-portifólio {
+    margin-top: 30%;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    body .bori{
+        margin: 10px 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .flex {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+    
+    .interface .logo img {
+        display: block;
+    }
+    .especialidades h2 {
+        text-align: center;
+        display: block;
+        margin: auto; /* Corrected value */
+    }
+     .especialidades-box {
+        margin: 0%;
+
+    }
+     header li a {
+        margin-left: -30%;
+     }
+     header nav.menu-pc ul li {
+        display: block;
+        padding: 0 0px;
+        margin-left: 15%;
+        word-spacing: 10px;
+    }
+    section.especialidades {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    section.Sobre {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    section .txt-sobre p{
+        text-align:center;
+        margin-right: 7%;
+    }
+    .especialidades-box{
+        margin-right: 10%;
+    }
+    .especialidades-box p{
+        text-align:center;
+    }
+    
+    .redes button{
+        margin-right: 10.8%;
+
+    }
+    .txt-sobre h2{
+        margin-right: 8%;
+    }
+
+    .Sobre .img-sobre img{
+        margin-top: -37%;
+        width: 80%;
+        margin-left: 6%;
+        
+    }
+    .kcb-mais button {
+        margin-left: 19%;
+    }
+    .img-topo-site img{
+        margin-left: 14%;
+        width: 120%;
+    }
+    .txt-topo-site {
+        margin-right: 8%;
+    }
+    .Contato-e-portifólio .contatu .redes button {
+        margin-left: 3%;
+    }
+
+}
