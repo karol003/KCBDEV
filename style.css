@@ -261,7 +261,9 @@ footer {
     margin-bottom: 30px;
 }
 
- 
+ html {
+    scroll-behavior: smooth ;
+ }
 
 section .Contato-e-portifólio .contatu .txt-contato p{
     color: white;
