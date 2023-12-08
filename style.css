@@ -28,18 +28,6 @@
     margin-left: 10%;
 }
 
-.interface .kcb-contato a button {
-    padding: 10px; 
-    font-size: 25px;
-    color: white;
-    background-color: rgb(226, 43, 128);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    margin: right 20%;
-    
-}
-
 h2 {
     color: white;
     font-size: 35px;
@@ -78,25 +66,18 @@ header nav.menu-pc ul li {
     padding: 0 40px;
 }
 
-.kcb-contato button:hover {
-    box-shadow: 0px 0px 8px purple;
-}
-
-
-
-
 /* Topo do site */
-section.topo-do-site {
+#início {
     padding: 20px 4%;
 }
 
-section.topo-do-site .flex {
+#início .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1 {
+#início h1 {
     color: rgb(82, 13, 71);
     font-size: 42px;
     font-weight: 600;
@@ -141,7 +122,7 @@ section.topo-do-site .flex {
     box-shadow: 5px 5px 37px 17px pink;
 }
 
-.topo-do-site .img-topo-site img {
+#início .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -156,18 +137,22 @@ section.topo-do-site .flex {
 }
 
 /* Especialidades */
+
+section.rolagem { 
+    scroll-behavior:smooth;
+}
 h2 {
     text-shadow: 0.1em 0.1em 0.2em rgb(226, 43, 128);
     margin-bottom: 20px;
 }
 
-section.especialidades {
+#especialidades {
     margin-top: 250px;
     padding: 100px;
 }
 
 
-.especialidades .especialidades-box {
+#especialidades .especialidades-box {
     color: white;
     padding: 5%;
     border-radius: 20px;
@@ -176,49 +161,49 @@ section.especialidades {
     transition: 1s;
 }
 
-.especialidades .especialidades-box:hover {
+#especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px rgb(226, 43, 128);
 }
 
-.especialidades .especialidades-box i {
+#especialidades .especialidades-box i {
     font-size: 70px;
     color: palevioletred;
 }
 
-.especialidades .especialidades-box h3 {
+#especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
     font-weight: 600; /* Corrected value */
 }
 
-section.especialidades .flex {
+#especialidades .flex {
     gap: 60px;
 }
 
 /* Sobre */
-section.Sobre {
+#Sobre {
     padding: 230px 4%;
 }
 
-section.Sobre .flex {
+#Sobre .flex {
     align-items: center;
     gap: 200px;
     margin-top: 20px;
     margin-bottom: 200px;
 }
 
-section.Sobre img {
+#Sobre img {
     width: 190%;
     border-radius: 30%;
 }
 
-.Sobre .txt-sobre {
+#Sobre .txt-sobre {
     color: white;
     text-align: justify;
 }
 
-.Sobre .txt-sobre .redes button {
+#Sobre .txt-sobre .redes button {
     margin-top: 15px;
     width: 60px;
     height: 60px;
@@ -235,13 +220,13 @@ section.Sobre img {
 }
 /* Estilo do mobile */
 
-.Projetos {
+#Contato-e-portifólio {
     text-align: center;
 }
 .txt-contato p {
     color: white;
 }
-.Contato-e-portifólio .contatu .redes button{
+#Contato-e-portifólio .contatu .redes button{
     margin-top: 2%;
     width: 60px;
     height: 60px;
@@ -250,10 +235,12 @@ section.Sobre img {
     background-color: rgba(226, 43, 128, 0.548);
     font-size: 25px;
     cursor: pointer;
-    margin-left: 20%;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-block: 5%;
 }
 
-.Contato-e-portifólio h2{
+#Contato-e-portifólio h2{
     margin-top: 20%;
 }
 footer {
@@ -265,11 +252,11 @@ footer {
     scroll-behavior: smooth ;
  }
 
-section .Contato-e-portifólio .contatu .txt-contato p{
+#Contato-e-portifólio .contatu .txt-contato p{
     color: white;
 }
 
-footer.Contato-e-portifólio {
+#Contato-e-portifólio {
     margin-top: 30%;
 }
 
@@ -290,12 +277,12 @@ footer.Contato-e-portifólio {
     .interface .logo img {
         display: block;
     }
-    .especialidades h2 {
+    #especialidades h2 {
         text-align: center;
         display: block;
         margin: auto; /* Corrected value */
     }
-     .especialidades-box {
+     #especialidades-box {
         margin: 0%;
 
     }
@@ -308,11 +295,11 @@ footer.Contato-e-portifólio {
         margin-left: 15%;
         word-spacing: 10px;
     }
-    section.especialidades {
+    #especialidades {
         margin-top: 20px;
         padding: 10px;
     }
-    section.Sobre {
+    #Sobre {
         margin-top: 20px;
         padding: 10px;
     }
@@ -335,7 +322,7 @@ footer.Contato-e-portifólio {
         margin-right: 8%;
     }
 
-    .Sobre .img-sobre img{
+    #Sobre .img-sobre img{
         margin-top: -37%;
         width: 80%;
         margin-left: 6%;
@@ -351,8 +338,8 @@ footer.Contato-e-portifólio {
     .txt-topo-site {
         margin-right: 8%;
     }
-    .Contato-e-portifólio .contatu .redes button {
-        margin-left: 3%;
+    #Contato-e-portifólio .contatu .redes button {
+        margin-inline-end: 10%;
     }
-
+        
 }
