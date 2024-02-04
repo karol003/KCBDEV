@@ -8,6 +8,12 @@
     font-size: 25px;
 }
 
+html {
+    width: 100%;
+    height:max-content;
+}
+ 
+
 .bori {
     background: linear-gradient(109.6deg, rgb(251, 186, 186) 11.2%, rgb(200, 122, 245) 91.2%);
     height: 100%;
@@ -24,7 +30,6 @@
 }
 
 .interface .flex {
-    margin-top: 5%;
     margin-left: 10%;
 }
 
@@ -85,7 +90,7 @@ header nav.menu-pc ul li {
 }
 
 .interface .menu-pc {
-    margin-top: 5%;
+   
     margin-right: 0%;
     font-size: 25px;
 }
@@ -146,6 +151,9 @@ h2 {
 }
 
 #especialidades {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 250px;
     padding: 100px;
 }
@@ -189,12 +197,11 @@ h2 {
     align-items: center;
     gap: 200px;
     margin-top: 20px;
-    margin-bottom: 200px;
 }
 
 #Sobre img {
-    width: 190%;
-    border-radius: 30%;
+    width: 400px;
+    border-radius: 10%;
 }
 
 #Sobre .txt-sobre {
@@ -202,16 +209,6 @@ h2 {
     text-align: justify;
 }
 
-#Sobre .txt-sobre .redes button {
-    margin-top: 15px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgba(226, 43, 128, 0.548);
-    font-size: 25px;
-    cursor: pointer;
-}
 
 .redes button:hover {
     box-shadow: 0 0 8px pink;
@@ -221,12 +218,17 @@ h2 {
 
 #Contato-e-portifólio {
     text-align: center;
+    
+    background-color: rgba(226, 43, 128, 0.178);
 }
 .txt-contato p {
     color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
-#Contato-e-portifólio .contatu .redes button{
-    margin-top: 2%;
+.redes button{
     width: 60px;
     height: 60px;
     border-radius: 20%;
@@ -234,17 +236,17 @@ h2 {
     background-color: rgba(226, 43, 128, 0.548);
     font-size: 25px;
     cursor: pointer;
-    margin-left: 10%;
-    margin-right: 15%;
-    margin-block: 5%;
+    margin: 10px;
 }
 
-#Contato-e-portifólio h2{
-    margin-top: 20%;
+.redes a {
+    text-decoration: none;
+    color: rgba(253, 255, 255, 0.521);
 }
+
 footer {
     margin-top: 100px;
-    margin-bottom: 30px;
+    
 }
 
  html {
@@ -253,11 +255,9 @@ footer {
 
 #Contato-e-portifólio .contatu .txt-contato p{
     color: white;
+   
 }
 
-#Contato-e-portifólio {
-    margin-top: 30%;
-}
 
 
 @media screen and (max-width: 1024px) {
@@ -314,17 +314,21 @@ footer {
     }
     
     .redes button{
-        margin-right: 10.8%;
-
+        display: block;
+        position: relative;
+        left: 160px;
     }
+
     .txt-sobre h2{
         margin-right: 8%;
     }
 
     #Sobre .img-sobre img{
-        margin-top: -37%;
-        width: 80%;
-        margin-left: 6%;
+        position: relative;
+        
+        bottom: 100px;
+        width: 200px;
+       
         
     }
     .kcb-mais button {
@@ -337,8 +341,7 @@ footer {
     .txt-topo-site {
         margin-right: 8%;
     }
-    #Contato-e-portifólio .contatu .redes button {
-        margin-inline-end: 10%;
-    }
+   
         
 }
+
