@@ -156,6 +156,7 @@ h2 {
     margin-right: 5%;
     margin-top: 250px;
     padding: 100px;
+    
 }
 
 
@@ -166,6 +167,7 @@ h2 {
     border: 2px solid rgba(226, 43, 128, 0.068);
     margin-top: 80px;
     transition: 1s;
+    cursor: pointer;
 }
 
 #especialidades .especialidades-box:hover {
@@ -183,7 +185,11 @@ h2 {
     margin: 15px 0;
     font-weight: 600; /* Corrected value */
 }
+.especialidades-box a {
+    text-decoration: none;
+    color: white;
 
+}
 #especialidades .flex {
     gap: 60px;
 }
@@ -279,12 +285,8 @@ footer {
     #especialidades h2 {
         text-align: center;
         display: block;
-        margin: auto; /* Corrected value */
     }
-     #especialidades-box {
-        margin: 0%;
-
-    }
+     
      header li a {
         margin-left: -30%;
      }
@@ -295,24 +297,27 @@ footer {
         word-spacing: 10px;
     }
     #especialidades {
+        display: inline;
         margin-top: 20px;
-        padding: 10px;
+        padding: 20px;
+        text-align: start;
     }
     #Sobre {
         margin-top: 20px;
         padding: 10px;
     }
     section .txt-sobre p{
-        text-align:center;
+        text-align:justify;
         margin-right: 7%;
     }
     .especialidades-box{
+        display: inline;
         margin-right: 10%;
+        text-align: start;
     }
-    .especialidades-box p{
-        text-align:center;
+    .especialidades-box p {
+        font-size: 22px;
     }
-    
     .redes button{
         display: block;
         position: relative;
