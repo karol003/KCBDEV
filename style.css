@@ -378,14 +378,10 @@ footer {
        border-radius: 30%;
         cursor: hand;
         cursor: pointer;
+        display: block;
     }
       
 
-/*mercado*/ 
-
-.menumobile .aaa:hover {
-    color:#0CAC1F;
-}
     
     #especialidades {
         display: inline;
