@@ -25,6 +25,19 @@
                 <li><a href="#Contato-e-portifólio">Projetos e Contato</a></li>
             </ul>
         </nav>
+        <div class="menumobile">
+        <div class="menu-toggle"> <!-- Adicionado a classe menu-toggle -->
+            <button id="toggle"><img src="/imagens/menu_white_36dp.svg" alt="Menu" /></button>
+          </div>
+          <div class="menu-mobile"> <!-- Adicionado a classe menu-mobile -->
+            <ul>
+              <li class="nav-item"><a href="#início">início</a></li>
+              <li class="nav-item"><a href="#Especialidades">Habilidades</a></li>
+              <li class="nav-item"><a href="#Sobre">Sobre</a></li>
+              <li class="nav-item"><a href="#Contato-e-portifólio">Projetos e Contato</a></li>
+            </ul>
+        </div>
+          </div>
     </div>
 </header>
 
@@ -99,10 +112,17 @@
           </footer>
         
       </section>
-
        
 </main>
 </div>
+<script>
+    const menuToggle = document.getElementById('toggle'); // Selecionar o botão pelo ID 'toggle'
+    const menuMobile = document.querySelector('.menu-mobile');
+
+    menuToggle.addEventListener('click', function() {
+        menuMobile.classList.toggle('active');
+    });
+</script>
           
 </body>
 

@@ -17,7 +17,7 @@ html {
 .bori {
     background: linear-gradient(109.6deg, rgb(251, 186, 186) 11.2%, rgb(200, 122, 245) 91.2%);
     height: 100%;
-    
+    margin: 0%;
 }
 
 .interface {
@@ -95,6 +95,9 @@ header nav.menu-pc ul li {
     font-size: 25px;
 }
 
+.menu-mobile {
+    display: none;
+}
 
 .kcb-mais button {
     padding: 10px 40px;
@@ -212,7 +215,7 @@ h2 {
 
 #Sobre .txt-sobre {
     color: white;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -269,7 +272,7 @@ footer {
 @media screen and (max-width: 1024px) {
 
     body .bori{
-        margin: 10px 10px;
+        margin: 0;
         flex-direction: row;
         flex-wrap: wrap;
         
@@ -296,6 +299,89 @@ footer {
         margin-left: 15%;
         word-spacing: 10px;
     }
+    .menumbicon button{
+        background-color:  rgba(73, 64, 64, 0.027);
+        border:none;
+       text-decoration: none;
+       position: relative;
+      bottom: 15px;
+       border-radius: 30%;
+      
+
+    }
+
+    .menu-pc {
+        display: none;
+    }
+
+    .menumbicon {
+        display: block;
+        cursor: hand;
+        cursor: pointer;
+        margin-right: 20px;
+        margin-top: -1px;
+       
+    }
+
+    .menu-mobile.active {
+        display: block; 
+        
+    }
+
+    .menumbicon button{
+        background-color:pink;
+    }
+   
+    .menumobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        width: 80%;
+        list-style-type: none;
+       
+    }
+
+    .menumobile {
+        position: relative;
+        bottom: 20px;
+    }
+    .menumobile a {
+        color: #35011ead;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+    }
+
+
+    .mobilemenu .nav-link {
+        cursor: pointer;
+    }
+
+    .menumobile ul li {
+        margin-bottom: 20px; 
+      }
+      #toggle {
+        background-color: rgba(216, 112, 147, 0.315);
+        border:none;
+       text-decoration: none;
+       position: relative;
+      right: 20px;
+      top: 10px;
+      padding: 10px;
+      margin: auto;
+       border-radius: 30%;
+        cursor: hand;
+        cursor: pointer;
+    }
+      
+
+/*mercado*/ 
+
+.menumobile .aaa:hover {
+    color:#0CAC1F;
+}
+    
     #especialidades {
         display: inline;
         margin-top: 20px;
@@ -307,7 +393,7 @@ footer {
         padding: 10px;
     }
     section .txt-sobre p{
-        text-align:justify;
+        text-align:center;
         margin-right: 7%;
     }
     .especialidades-box{
