@@ -29,10 +29,11 @@
         <div class="menu-toggle"> <!-- Adicionado a classe menu-toggle -->
             <button id="toggle"><img src="/imagens/menu_white_36dp.svg" alt="Menu" /></button>
           </div>
-          <div class="menu-mobile"> <!-- Adicionado a classe menu-mobile -->
+          <div class="menu-mobile"> 
+            <button id="close">x</button>
             <ul>
               <li class="nav-item"><a href="#início">início</a></li>
-              <li class="nav-item"><a href="#Especialidades">Habilidades</a></li>
+              <li class="nav-item"><a href="#especialidades">Habilidades</a></li>
               <li class="nav-item"><a href="#Sobre">Sobre</a></li>
               <li class="nav-item"><a href="#Contato-e-portifólio">Projetos e Contato</a></li>
             </ul>
@@ -116,12 +117,21 @@
 </main>
 </div>
 <script>
-    const menuToggle = document.getElementById('toggle'); // Selecionar o botão pelo ID 'toggle'
-    const menuMobile = document.querySelector('.menu-mobile');
+const menuToggle = document.getElementById('toggle'); // Selecionar o botão pelo ID 'toggle'
+const menuClose = document.getElementById('close'); // Selecionar o botão de fechar pelo ID 'close'
+const menuMobile = document.querySelector('.menu-mobile');
 
-    menuToggle.addEventListener('click', function() {
-        menuMobile.classList.toggle('active');
-    });
+menuToggle.addEventListener('click', function() {
+    menuMobile.classList.toggle('active');
+    menuToggle.style.display = 'none'; // Oculta o botão de menu quando clicado
+});
+
+menuClose.addEventListener('click', function() {
+    menuMobile.classList.remove('active');
+    menuToggle.style.display = 'block'; // Torna visível o botão de menu ao fechar o menu
+});
+
+
 </script>
           
 </body>

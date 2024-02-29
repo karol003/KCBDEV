@@ -272,7 +272,9 @@ footer {
     display: none;
 }
 
-
+#close {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -289,6 +291,9 @@ footer {
     
     .interface .logo img {
         display: block;
+        position: relative;
+        right: 30px;
+        bottom: 60px;
     }
     #especialidades h2 {
         text-align: center;
@@ -330,6 +335,8 @@ footer {
 
     .menu-mobile.active {
         display: block; 
+        position: relative;
+        right: 30px;
         
     }
 
@@ -349,6 +356,9 @@ footer {
     .menumobile {
         position: relative;
         bottom: 20px;
+        margin: auto;
+        width: 35%;
+        text-align: start;
     }
     .menumobile a {
         color: #35011ead;
@@ -356,6 +366,10 @@ footer {
         text-decoration: none;
         position: relative;
         top: 15px;
+    }
+
+    .menumobile a:hover {
+        background-color: rgba(137, 43, 226, 0.151);
     }
 
 
@@ -371,16 +385,38 @@ footer {
         border:none;
        text-decoration: none;
        position: relative;
-      right: 20px;
-      top: 10px;
-      padding: 10px;
+      
+      bottom: 60px;
+     
       margin: auto;
        border-radius: 30%;
         cursor: hand;
         cursor: pointer;
         display: block;
     }
+
+
+
+    #close {
+        border: none;
+        background-color: pink;
+        padding: 5px;
+        position: relative;
+        color: rgb(255, 255, 255);
+        left: 80px;
+        display: block;
+    }
+    
       
+    .img-topo-site {
+        position: relative;
+        bottom: 100px;
+    }
+
+    .txt-topo-site {
+        position: relative;
+        bottom: 130px;
+    }
 
     
     #especialidades {
@@ -408,7 +444,7 @@ footer {
     .redes button{
         display: block;
         position: relative;
-        left: 160px;
+        left: 120px;
     }
 
     .txt-sobre h2{
